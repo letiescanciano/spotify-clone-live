@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: "Cabin";
+  background-color: #2d46ba;
+}
+nav {
+  background-color: black;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 10%;
+}
+.menu {
+  color: white;
+  list-style-type: none;
+  width: 40%;
+  display: flex;
+}
+
+.menu li {
+  padding: 15px;
+}
+
+main {
+  color: #1ed760;
+  text-align: center;
+  background: url("../images/bursts.svg");
+  background-size: 175%;
+  background-position: 46% 4%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 156px;
+  font-weight: 700;
+  line-height: 166px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  text-decoration: none;
+  color: #2d46ba;
+  text-transform: uppercase;
+  background-color: #1ed760;
+  padding: 16px 45px;
+  border-radius: 300px;
+  display: block;
+  width: 250px;
+  margin-left: 36%;
+}
