@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Cabin";
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.sidebar-nav {
+  height: 100vh;
+  background-color: black;
+  width: 240px;
+  padding: 16px;
+}
+
+.sidebar-nav .logo svg {
+  height: 50px;
+  padding-bottom: 15px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-nav .menu li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+.sidebar-nav .menu i {
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+.sidebar-nav .menu li.selected {
+  background-color: #1a1a1a;
+}
+.sidebar-nav .menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.fas {
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card {
+  font-family: "Cabin";
+  background-color: #181818;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.card h5,
+.card h6 {
+  text-overflow: ellipsis;
+}
