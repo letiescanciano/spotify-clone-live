@@ -17,8 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/stylesheets/app.css" />
-    <script src="./assets/scripts/spotify-api.js"></script>
-    <script src="./assets/scripts/home.js"></script>
+    <script src="./assets/scripts/search.js"></script>
   </head>
   <body>
     <nav class="sidebar-nav">
@@ -37,10 +36,10 @@
         </svg>
       </span>
       <ul class="menu">
-        <li class="selected">
+        <li>
           <a href="home.html"><i class="fas fa-home"></i>Home</a>
         </li>
-        <li>
+        <li class="selected">
           <a href="search.html"><i class="fas fa-search"></i>Search</a>
         </li>
         <li>
@@ -51,8 +50,53 @@
     <main class="container">
       <div class="row top-bar"></div>
       <div class="row app">
-        <div class="col-md-12">
-          <h1>Browse all</h1>
+        <div class="col-md-12 py-3">
+          <h2>Your top genres</h2>
+          <div class="top-genres">
+            <a class="grid-item pop" href="/pop" class="grid-item">
+              <h3>Pop</h3>
+              <img
+                class="item-img"
+                src="https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg"
+                alt="pop"
+              />
+            </a>
+            <a
+              class="grid-item"
+              style="background-color: rgb(235, 30, 50)"
+              href="/rock"
+            >
+              <h3>Rock</h3>
+              <img
+                class="item-img"
+                src="https://t.scdn.co/images/31c85ae6fec34a16927ef28a7a88e97b.jpeg"
+                alt="rock"
+              />
+            </a>
+          </div>
+          <h2>Browse all</h2>
+          <div class="browse-all">
+             <a class="grid-item" href="/pop" class="grid-item">
+              <h3>Podcasts</h3>
+              <img
+                class="item-img"
+                src="https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg"
+                alt="pop"
+              />
+            </a>
+            <a
+              class="grid-item"
+              href="/rock"
+            >
+              <h3>Made for you</h3>
+              <img
+                class="item-img"
+                src="https://t.scdn.co/images/31c85ae6fec34a16927ef28a7a88e97b.jpeg"
+                alt="rock"
+              />
+            </a>
+            <a>
+          </div>
         </div>
       </div>
     </main>

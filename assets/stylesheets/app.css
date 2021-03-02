@@ -6,6 +6,15 @@ body {
   color: white;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
 .sidebar-nav {
   height: 100vh;
   background-color: black;
@@ -66,4 +75,58 @@ main {
 .card h5,
 .card h6 {
   text-overflow: ellipsis;
+}
+
+.top-genres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 24px;
+}
+
+.grid-item {
+  height: 220px;
+  grid-column: span 2;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.pop {
+  background-color: rgb(195, 240, 200);
+}
+
+.top-genres h3 {
+  padding: 16px;
+  font-size: 40px;
+  line-height: 1.3em;
+}
+
+.item-img {
+  position: absolute;
+  right: 0;
+  width: 128px;
+  height: 128px;
+  transform: rotate(25deg) translate(18%, -2%);
+}
+
+.browse-all {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: 4fr;
+  grid-gap: 24px;
+}
+.browse-all h3 {
+  padding: 16px;
+  font-size: 24px;
+  line-height: 1.3em;
+}
+.browse-all .grid-item {
+  grid-column: span 1;
+}
+
+.browse-all .item-img {
+  bottom: 0;
 }
