@@ -5,7 +5,7 @@ const clientEncoded =
   "M2E2NThkZGExZDRjNDBlMGI3MjMzZDdjMDBiOTg1NWU6NjM3NTY2ZWQwY2E4NGU1OWE2NTBjYmEzNTM3NWMxMzQ=";
 
 const api_token =
-  "BQAyraoMOBCBXP65nRF-43bqScCCc4fY0N4yTuvdw4ubKw7htVEcI8BDaOB0klUdoo9v36Kk185C-P6k3RI";
+  "BQCqKIRiyUTR7lTE7GwrKQcMStoo7MmkcjkjW4SaR_0BNG0vi0kghgnCugWbiIokaNcmiLLxUcloMZMWasw";
 
 const SpotifyAPI = {
   browseNewReleases: async () => {
