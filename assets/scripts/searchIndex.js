@@ -89,7 +89,6 @@ const createItem = (item) => {
 };
 window.onload = () => {
   const browseAllDiv = document.querySelector(".browse-all");
-  console.log("browseAllDiv", browseAllDiv);
 
   browseAllDiv.innerHTML = browseAllItems
     .map((item) => {

@@ -6,15 +6,14 @@ body {
   color: white;
 }
 
-a {
-  color: white;
+body a {
   text-decoration: none;
-}
-
-a:hover {
   color: white;
 }
-
+body a:hover {
+  text-decoration: none;
+  color: white;
+}
 .sidebar-nav {
   height: 100vh;
   background-color: black;
@@ -26,6 +25,7 @@ a:hover {
   height: 50px;
   padding-bottom: 15px;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -51,32 +51,60 @@ ul {
   color: white;
 }
 
-.fas {
-  font-size: 24px;
-  padding-right: 15px;
-}
-
 main {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+.top-bar {
+  height: 60px;
+  width: 100%;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.fas {
+  margin-right: 35px;
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+.fas.selected {
+  color: white;
+  opacity: 1;
+}
+
+.row.app {
+  padding: 32px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 32px; */
+}
 
 .card {
   font-family: "Cabin";
-  background-color: #181818;
+  background: #181818;
 }
 
 .card a {
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
 .card h5,
 .card h6 {
   text-overflow: ellipsis;
 }
+.container {
+  margin: 0;
+}
 
+.app h2 {
+  font-size: 24px;
+}
 .top-genres {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -86,17 +114,17 @@ main {
 
 .grid-item {
   height: 220px;
-  grid-column: span 2;
   border-radius: 8px;
-  background-color: #1f1f1f;
+  grid-column: span 2;
   position: relative;
   overflow: hidden;
 }
-
 .pop {
   background-color: rgb(195, 240, 200);
 }
-
+.rock {
+  background-color: rgb(235, 30, 50);
+}
 .top-genres h3 {
   padding: 16px;
   font-size: 40px;
@@ -106,27 +134,134 @@ main {
 .item-img {
   position: absolute;
   right: 0;
+  transform: rotate(25deg) translate(18%, -2%);
   width: 128px;
   height: 128px;
-  transform: rotate(25deg) translate(18%, -2%);
 }
 
 .browse-all {
-  padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: 4fr;
   grid-gap: 24px;
 }
+.browse-all .grid-item {
+  grid-column: span 1;
+  background-color: rgb(235, 30, 50);
+}
+
+.browse-all .item-img {
+  width: 128px;
+  height: 128px;
+  bottom: 0px;
+}
+
 .browse-all h3 {
   padding: 16px;
   font-size: 24px;
   line-height: 1.3em;
 }
-.browse-all .grid-item {
-  grid-column: span 1;
+
+#top-bar-search {
+  position: relative;
+  background-color: white;
+  width: 290px;
+  height: 45px;
+  border-radius: 50px;
 }
 
-.browse-all .item-img {
-  bottom: 0;
+#top-bar-search i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+}
+
+#top-bar-search input {
+  padding-left: 40px;
+  width: 245px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(180px, 1fr));
+  grid-gap: 32px;
+}
+.top-result {
+  grid-column: span 2;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: #ffffff1a;
+}
+.top-result .details {
+  display: grid;
+  grid-column: span 2;
+}
+.top-result .details img {
+  border-radius: 100%;
+  width: 92px;
+  height: 92px;
+}
+.top-result .details .title {
+  font-size: 32px;
+}
+
+.songs {
+  grid-column: span 6;
+}
+.songs-list {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+.song-item {
+  display: flex;
+  padding: 8px;
+  gap: 16px;
+}
+.song-item:hover {
+  background-color: #ffffff1a;
+}
+.song-details p {
+  margin: 0;
+}
+.song-details .artist,
+.song-item .duration,
+.artist-details .category {
+  color: rgb(179, 179, 179);
+}
+.artists {
+  grid-column: span 6;
+}
+
+.artist-list {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(8, minmax(140px, 1fr));
+}
+.artist-item {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff1a;
+}
+
+.artist-item img {
+  border-radius: 50%;
+}
+
+.artist-details p {
+  text-align: left;
+}
+
+.artist-details .name {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
 }
